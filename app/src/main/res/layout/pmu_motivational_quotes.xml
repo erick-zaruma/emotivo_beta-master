@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/gradientsunrise"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/pmu_backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="#00FDFDFE"
+                app:srcCompat="@drawable/pmu_backbutton" />
+
+            <EditText
+                android:id="@+id/gen_quote"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa_bold"
+                android:gravity="center|top"
+                android:inputType="textMultiLine"
+                android:text="“The sun is a daily reminder that we too can rise again from the darkness, that we too can shine our own light.”  -Sara Ajna"
+                android:textColor="#16494F"
+                android:textSize="29sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/meh_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/mehbutton" />
+
+                <ImageButton
+                    android:id="@+id/happy_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/happybutton" />
+
+                <ImageButton
+                    android:id="@+id/wonder_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/surprisedbutton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/reflection_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#00000000"
+                    app:srcCompat="@drawable/reflectionbutton" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/cont_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="#00FFFFFF"
+                app:srcCompat="@drawable/pmu_continue" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

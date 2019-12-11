@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#58768F"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/authorHeader1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/writingheader" />
+
+    <ImageView
+        android:id="@+id/cherryblossom"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cherry_blossom" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/cherryblossom"
+        android:layout_alignLeft="@+id/cherryblossom"
+        android:layout_alignTop="@+id/cherryblossom"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/eight" />
+    <FrameLayout
+        android:id="@+id/frameConfetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/confetti"
+            android:layout_width="318dp"
+            android:layout_height="299dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/confetti" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/textbubbles"
+        android:layout_width="295dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/frameConfetti"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/textbubbles" />
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/textbubbles"
+        android:layout_alignRight="@id/textbubbles"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/open" />
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@id/textbubbles"
+        android:layout_alignTop="@id/textbubbles"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/back" />
+</RelativeLayout>

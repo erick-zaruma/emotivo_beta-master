@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Top left shiba name -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="left">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <!-- shiba_name is the border-->
+                <ImageView
+
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/shiba_name"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/iv_shiba_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/name_tag"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    >
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--Middle center shiba sitting -->
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/shiba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shiba_sitting"
+                />
+
+
+        </LinearLayout>
+
+        <!--Bottom center button with listener -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxBackgroundColor="@color/buttonBackgroundColor"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:gravity="center"
+                app:cornerRadius="40dp"
+                app:icon="@drawable/continue_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

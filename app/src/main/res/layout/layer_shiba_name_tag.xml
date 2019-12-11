@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:drawable="@drawable/shiba_name" />
+        <item
+
+            android:drawable="@drawable/name_tag" />
+</layer-list>
+
+</LinearLayout>

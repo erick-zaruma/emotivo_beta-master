@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.google.codelabs.mdc.java.emotivo"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    api 'com.google.android.material:material:1.1.0-alpha06'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21"
+    implementation 'com.github.ronaldsmartin:Material-ViewPagerIndicator:1.0.4'
+    implementation 'com.chabbal:slidingdotsplash:1.0.2'
+    implementation 'com.android.support:design:28.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:core:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha05'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha05'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
+}

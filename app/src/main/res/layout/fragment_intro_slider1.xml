@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chabbal.slidingdotsplash.SlidingSplashView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="10dp"
+        app:imageResources="@array/img_id_arr"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Begin" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

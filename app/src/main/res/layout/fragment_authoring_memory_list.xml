@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E6C0"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/authorheader3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/writingheader" />
+
+    <ImageButton
+        android:id="@+id/wbackButton3"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="29dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/wbackbutton" />
+
+    <TextView
+        android:id="@+id/pastwritingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/authorheader3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/comfortaa_regular"
+        android:text="Epoch 1"
+        android:textColor="#8BA5C1"
+        android:textSize="50sp"
+        tools:text="Epoch 1" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#58768F"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/VirtueFaultMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/writingheader" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/VirtueButton"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.286"
+                app:srcCompat="@drawable/text_box" />
+
+            <ImageButton
+                android:id="@+id/FaultButton"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/VirtueButton"
+                app:srcCompat="@drawable/text_box" />
+
+            <ImageButton
+                android:id="@+id/BackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.049"
+                app:srcCompat="@drawable/wbackbutton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

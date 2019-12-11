@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/authorheader4"
+        android:foreground="@drawable/bookpagesbg" />
+
+    <ImageView
+        android:id="@+id/authorheader4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/booktopbar" />
+
+    <ImageView
+        android:id="@+id/loadingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorheader4"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        app:srcCompat="@drawable/loadingbarfull" />
+
+    <ImageButton
+        android:id="@+id/nextwritebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorheader4"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/loadingbar"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/nextbutton" />
+    <EditText
+        android:id="@+id/editText"
+        android:gravity="top|left"
+        android:layout_below="@id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="What memory do you want to write about."
+        android:inputType="textMultiLine|textCapWords"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/loadingbar"
+        android:layout_alignBottom="@id/loadingbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/pastwritingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/authorheader4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa_regular"
+        android:text="Memory 1"
+        android:textColor="#8BA5C1"
+        android:textSize="50sp"
+        />
+
+
+</RelativeLayout>

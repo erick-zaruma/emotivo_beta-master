@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            />
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <!--
+    <com.chabbal.slidingdotsplash.SlidingSplashView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+
+        app:imageResources="@array/img_id_arr"/>
+
+         android:layout_alignParentBottom="true"
+ app:tabBackground="@drawable/tab_selector"
+
+            app:tabMaxWidth="0dp"
+            app:tabIndicatorHeight="0dp"
+-->
+
+</LinearLayout>
